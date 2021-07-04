@@ -14,13 +14,13 @@ class User {
   email: string;
 
   @Column()
-  admin: string;
+  admin: boolean;
 
   @CreateDateColumn()
-  created_at: string;
+  created_at: Date;
 
   @CreateDateColumn()
-  updated_at: string;
+  updated_at: Date;
 
 
   constructor() {
