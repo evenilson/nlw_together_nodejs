@@ -7,9 +7,8 @@ interface ITagRequest {
 
 
 class CreateTagService {
-  async execute({ name }: ITagRequest) {
+  async execute(name: string) {
     const tagsRepository = getCustomRepository(TagsRepositories);
-
 
     if(!name) {
       throw new Error("Incorrect name");
